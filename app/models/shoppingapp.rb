@@ -1,0 +1,2 @@
+class Shoppingapp < ApplicationRecord
+end
