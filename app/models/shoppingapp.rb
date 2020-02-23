@@ -1,2 +1,0 @@
-class Shoppingapp < ApplicationRecord
-end

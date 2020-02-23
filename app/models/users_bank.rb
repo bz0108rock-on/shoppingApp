@@ -1,2 +1,0 @@
-class UsersBank < ApplicationRecord
-end
