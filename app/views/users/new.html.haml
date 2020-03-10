@@ -1,0 +1,112 @@
+%body
+  .product-screen
+    .product-screen__header
+      .product-screen__header-logo
+        = link_to root_path do
+          = image_tag "furima-logo.png", size: "185x49", class: "product-screen__header--furima-logo"
+    .product-screen__main
+      .product-screen__main__content
+        .product-screen__main__content__exhibition-image
+          .product-screen__main__content__exhibition-image__label
+            %label 出品画像
+            %span.required__label 必須
+          %p 最大10枚までアップロードできます
+        .product-screen__main__content__upload-container
+          .product-screen__main__content__upload-container__text
+            %i.fas.fa-camera
+            %p 
+              ドラッグアンドドロップ
+              %br
+              またはクリックしてファイルをアップロード
+      .product-screen__main__goods
+        .product-screen__main__goods__name
+          .product-screen__main__goods__name__label
+            %label 商品名
+            %span.required__label 必須
+        .product-screen__main__goods__name__textfield
+          %input{placeholder: "40文字まで", type: "text", value: ""}/
+        .product-screen__main__goods__description
+          .product-screen__main__goods__description__label
+            %label 商品の説明
+            %span.required__label 必須
+        .product-screen__main__goods__description__textarea
+          %textarea{placeholder: "商品の説明（必須 1,000文字以内）\n（色、素材、重さ、定価、注意点など）\n\n例）着ると暖かくて脱ぐと寒いです。どうお手入れすればいいかはお婆ちゃんに聞いてください。\n"}
+      .product-screen__main__details
+        .product-screen__main__details__categories
+          .product-screen__main__details__categories__label
+            %label カテゴリー
+            %span.required__label 必須
+        .product-screen__main__details__categories__serectform
+          %select{:name => "カテゴリー"}
+            %option{value: ""} 選択してください
+            %option{value: "レディース"} レディース
+            %option{value: "メンズ"} メンズ
+        .product-screen__main__details__brand
+          .product-screen__main__details__brand__label
+            %label ブランド
+            %span.any__label 任意
+        .product-screen__main__details__brand__textfield
+          %input{placeholder: "例）パテックフィリップ", type: "text", value: ""}/
+        .product-screen__main__details__status
+          .product-screen__main__details__status__label
+            %label 商品の状態
+            %span.required__label 必須
+        .product-screen__main__details__status__serectform
+          %select{:name => "商品の状態"}
+            %option{value: ""} 選択してください
+            %option{value: "新品、未使用"} 新品、未使用
+            %option{value: "未使用に近い"} 未使用に近い
+            %option{value: "目立った傷や汚れなし"} 目立った傷や汚れなし
+            %option{value: "やや傷や汚れあり"} やや傷や汚れあり
+            %option{value: "傷や汚れあり"} 傷や汚れあり
+            %option{value: "全体的に状態が悪い"} 全体的に状態が悪い
+      .product-screen__main__delivery
+        .product-screen__main__delivery__burden
+          .product-screen__main__delivery__burden__label
+            %label 配送料の負担
+            %span.required__label 必須
+        .product-screen__main__delivery__burden__serectform
+          %select{:name => "配送料の負担"}
+            %option{value: ""} 選択してください
+            %option{value: "送料込み（出品者負担）"} 送料込み（出品者負担）
+            %option{value: "着払い（購入者負担）"} 着払い（購入者負担）
+        .product-screen__main__delivery__area
+          .product-screen__main__delivery__area__label
+            %label 配送元の地域
+            %span.required__label 必須
+        .product-screen__main__delivery__burden__serectform
+          %select{:name => "発送元の地域"}
+            %option{value: ""} 選択してください
+            %option{value: "大阪"} 大阪
+            %option{value: "大阪以外"} 大阪以外
+        .product-screen__main__delivery__days
+          .product-screen__main__delivery__days__label
+            %label 配送までの日数
+            %span.required__label 必須
+        .product-screen__main__delivery__burden__serectform
+          %select{:name => "配送までの日数"}
+            %option{value: ""} 選択してください
+            %option{value: "すぐ送る"} すぐ送る
+            %option{value: "後でやる"} 後でやる
+      .product-screen__main__price
+        .product-screen__main__price__selling-price
+          .product-screen__main__price__selling-price__label
+            %label 販売価格
+            %span.required__label 必須
+          .product-screen__main__price__selling-price__price-input
+            ¥
+            %input{placeholder: "0", type: "number", value: ""}/
+        .product-screen__main__price__btn-box
+          .product-screen__main__price__btn-box__selling-btn{href: "#"}
+            出品する
+          .product-screen__main__price__btn-box__back-btn{href: "#"}
+            もどる
+    .product-screen__footer
+      .product-screen__footer__content
+        .product-screen__footer__content__head プライバシーポリシー
+        .product-screen__footer__content__head FURIMA利用規約
+        .product-screen__footer__content__head 特定商取引に関する表記
+      .product-screen__footer-logo
+        = link_to root_path do
+          = image_tag "furima-logo.png", size: "185x49", class: "product-screen__footer--furima-logo"
+      %p.copyright © FURIMA

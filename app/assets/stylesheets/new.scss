@@ -1,0 +1,303 @@
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+.required__label {
+  margin-left: 8px;
+  font-size: 12px;
+  padding: 0 4px;
+  background-color: #ff0211;
+  color: $white;
+  border-radius: 2px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.product-screen {
+  background-color: $pale-gray;
+  &__header {
+    padding: 33px 0;
+    text-align: center;
+  }
+  &__main {
+    background-color: $white;
+    width: 100%;
+    margin: auto;
+    max-width: 700px;
+    &__content {
+      padding: 40px;
+      border-bottom: 1px solid $pale-gray;
+      &__exhibition-image {
+        margin: 0;
+        &__label {
+          margin: 0;
+        }
+        p {
+          margin-top: 16px;
+          font-size: 14px;
+        }
+      }
+      &__upload-container {
+        margin-top: 16px;
+        height: 150px;
+        background: $pale-gray;
+        border: dashed 1px #aaa;
+        cursor: pointer;
+        display: table;
+        width: 100%;
+        &__text {
+          text-align: center;
+          display: table-cell;
+          vertical-align: middle;
+          .fa-camera {
+            height: 24px;
+            width: 24px;
+            margin-bottom: 8px;
+            font-size: 22px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    &__goods {
+      padding: 40px;
+      border-bottom: 1px solid $pale-gray;
+      &__name {
+        margin: 0;
+        &__label {
+          margin: 0;
+        }
+        &__textfield {
+          margin-top:18px;
+          input {
+            width: 625px;
+            height: 48px;
+            padding: 0 16px;
+            border: 1px solid $pale-gray;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+        }
+      }
+      &__description {
+        margin-top:32px;
+        &__label {
+          margin: 0;
+        }
+        &__textarea {
+          margin-top:18px;
+          textarea {
+            width: 625px;
+            height: 150px;
+            padding: 16px;
+            border: 1px solid $pale-gray;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+    &__details {
+      padding: 40px;
+      border-bottom: 1px solid $pale-gray;
+      &__categories {
+        margin: 0;
+        &__label {
+          margin: 0;
+        }
+        &__serectform {
+          margin-top:18px;
+          select {
+            width: 625px;
+            height: 48px;
+            padding: 0 16px;
+            background-color: $white;
+            border: 1px solid $pale-gray;
+            border-radius: 4px;
+            box-sizing: border-box;
+            cursor: pointer;
+          }
+        }
+      }
+      &__brand {
+        margin-top:32px;
+        &__label {
+          margin: 0;
+          .any__label {
+            margin-left: 8px;
+            font-size: 12px;
+            padding: 0 4px;
+            background-color: #aaa;
+            color: $white;
+            border-radius: 2px;
+            display: inline-block;
+            font-weight: bold;
+          }
+        }
+        &__textfield {
+          margin-top:18px;
+          input {
+            width: 625px;
+            height: 48px;
+            padding: 0 16px;
+            border: 1px solid $pale-gray;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+        }
+      }
+      &__status {
+        margin-top:32px;
+        &__label {
+          margin: 0;
+        }
+        &__serectform {
+          margin-top:18px;
+          select {
+            width: 625px;
+            height: 48px;
+            padding: 0 16px;
+            background-color: $white;
+            border: 1px solid $pale-gray;
+            border-radius: 4px;
+            box-sizing: border-box;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    &__delivery {
+      padding: 40px;
+      border-bottom: 1px solid $pale-gray;
+      &__burden {
+        margin: 0;
+        &__label {
+          margin: 0;
+        }
+        &__serectform {
+          margin-top:18px;
+          select {
+            width: 625px;
+            height: 48px;
+            padding: 0 16px;
+            background-color: $white;
+            border: 1px solid $pale-gray;
+            border-radius: 4px;
+            box-sizing: border-box;
+            cursor: pointer;
+          }
+        }
+      }
+      &__area {
+        margin-top:32px;
+        &__label {
+          margin: 0;
+        }
+        &__serectform {
+          margin-top:18px;
+          select {
+            width: 625px;
+            height: 48px;
+            padding: 0 16px;
+            background-color: $white;
+            border: 1px solid $pale-gray;
+            border-radius: 4px;
+            box-sizing: border-box;
+            cursor: pointer;
+          }
+        }
+      }
+      &__days {
+        margin-top:32px;
+        &__label {
+          margin: 0;
+        }
+        &__serectform {
+          margin-top:18px;
+          select {
+            width: 625px;
+            height: 48px;
+            padding: 0 16px;
+            background-color: $white;
+            border: 1px solid $pale-gray;
+            border-radius: 4px;
+            box-sizing: border-box;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    &__price {
+      padding: 40px;
+      border-bottom: 1px solid $pale-gray;
+      &__selling-price {
+        -webkit-box-align: center;
+        align-items: center;
+        box-sizing: content-box;
+        display: flex;
+        &__label {
+          margin-right: auto;
+        }
+        &__price-input {
+          text-align: right;
+          input {
+            display: inline-block;
+            width: 300px;
+            height: 48px;
+            padding: 0 16px;
+            background-color: $white;
+            border: 1px solid $pale-gray;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+        }
+      }
+      &__btn-box {
+        margin: 40px auto 24px;
+        display: block;
+        width: 360px;
+        line-height: 48px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        &__selling-btn {
+          background: $light-green;
+          border: 1px solid $light-green;
+          color: $white;
+          border-radius: 4px;
+          margin-bottom: 24px;
+        }
+        &__back-btn {
+          background: #ccc;
+          border: 1px solid #ccc;
+          color: $black;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  &__footer {
+    padding: 33px 0;
+    text-align: center;
+    &__content {
+      margin: 0 0 20px;
+      display: flex;
+      justify-content: center;
+      &__head {
+        margin-right: 16px;
+        font-size: 12px;
+      }
+    }
+  }
+  .toppage__footer-logo {
+    max-width: 160px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+}
