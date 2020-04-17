@@ -14,7 +14,7 @@ class CardsController < ApplicationController
       )
     @card= Card.new(user_id: current_user.id, customer_id: customer.id)
       if @card.save
-        redirect_to cards_path
+        redirect_to root_path
       else
         render :new
       end
