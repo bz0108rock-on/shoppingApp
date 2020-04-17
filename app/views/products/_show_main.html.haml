@@ -46,10 +46,14 @@
           %td
             = "#{@product.delivery_day.name}"
     - if user_signed_in? && @product.seller_id == current_user.id
-      .product_main_content_edit-btn
-        = link_to "商品の編集", edit_product_path(@product.id), class: "edit-btn"
-      .product_main_content_delete-btn
-        = link_to "この商品を削除する", product_path(@product.id), method: :delete, class: "delete-btn"
+      - if @product.buyer_id.blank?
+        .product_main_content_edit-btn
+          = link_to "商品の編集", edit_product_path(@product.id), class: "edit-btn"
+        .product_main_content_delete-btn
+          = link_to "この商品を削除する", product_path(@product.id), method: :delete, class: "delete-btn"
+      - else
+        .product_main_content_cannot-buy-btn
+          = link_to '売り切れました', "", class: 'cannot-buy-btn'
     - else
       - if @product.buyer_id.blank?
         .product_main_content_buy-btn
